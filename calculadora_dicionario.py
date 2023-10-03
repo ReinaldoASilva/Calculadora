@@ -1,48 +1,39 @@
+
 import os
 
-print('=================')
-
-operations = {
-    '+' : 'Soma',
-    '-' : 'Subtração',
-    '*' : 'Multiplicação',
-    '/' : 'Divisão'
+print('=============')
+Operations = {
+    '0': 'Soma',
+    '1': 'Subtração',
+    '2': 'Multiplicação',
+    '3': "Divisão",
+    '4':"Exponenciação"
 }
 
 while True:
-    os.system('clear')
+    os.system('Clear')
     i = 0
-    for op, name in operations.items():
+    for op, name in Operations.items():
         print(i, ':', name)
         i += 1
     print('')
-    print(' Escolha a operação que deseja realizar')
-    op = int(input())
-    op_string = list(operations.keys())[op] #transformar dicionario em lista e atraves do [op] faer a selecao da variavel
+    print('Escolha a operação que deseja realizar?')
+    op = input()
 
-    print('')
-    print('{} escolhido.'.format(op_string) )
-    print('')
-    print('Qual o Primeiro valor?' )
-    v1 = float(input())   
-    print('Qual o Segundo valor?' )
-    v2 = float(input())   
+    
 
-    if op == 0:
-        resultado = v1 + v2
-    elif op == 1:
-        resultado = v1 - v2
-    elif op == 2:
-        resultado = v1 * v2
-    elif op == 3:
-        resultado = v1 / v2
+input('Qual operação deseja realizar?')
+if input == 0:
+    print(">>> + Escolhida")        
+    if input == 1:
+        print (">>> - Escolhida")
+    if input == 2:
+        print('>>> * Escolhida')
+    if input == 3:
+        print ('>>> / Escolhida ')
+    if input == 4:
+        print(" >>> ** escolhido ")    
 
-    print('')
-    print('{} {} {} = {}'.format(v1, op_string, v2, resultado))
-    print('')
-    print('=================')
 
-    print(' Deseja fazer mais alguma operação? (Digite 1 para sair')
-    comando = int(input())
-    if comando == 1:
-        break
+input(int('Qual o primeiro Valor?'))
+input(int( 'Qual o segundo valor?'))
